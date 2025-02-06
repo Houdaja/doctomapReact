@@ -1,0 +1,113 @@
+/* Styles généraux */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+}
+
+/* Conteneur principal du profil */
+.profile-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.doctor-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+  border: 5px solid #4caf50;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.profile-info div {
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.profile-info h4 {
+  font-size: 1.2rem;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+.profile-info p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.profile-info p strong {
+  color: #333;
+}
+
+.back-button {
+  display: inline-block;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 40px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #45a049;
+}
+
+/* Responsivité */
+@media screen and (max-width: 768px) {
+  .profile-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-info div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .doctor-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p.italic {
+    font-style: italic;
+  }
+}

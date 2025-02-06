@@ -1,22 +1,24 @@
 import { useState, useEffect } from "react";
 import "./home.css";
-import { useNavigate } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom";
 
 function Home() {
   const [doctors, setDoctors] = useState([]);
   const navigate = useNavigate(); // Hook pour la navigation
 
   useEffect(() => {
+    // Fonction pour récupérer les médecins depuis l'API
     getDoctors();
   }, []);
 
   const getDoctors = async () => {
     try {
+      // Récupérer les données des médecins via l'API
       const response = await fetch("https://127.0.0.1:8001/api/doctors");
       const data = await response.json();
       setDoctors(data.member);
     } catch (error) {
-      console.error(error);
+      console.error("Erreur lors de la récupération des médecins:", error);
     }
   };
 
