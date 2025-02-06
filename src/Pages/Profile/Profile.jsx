@@ -44,10 +44,10 @@ function Profile() {
         </div>
         <div>
           <h4>La prise de rendez-vous se fait uniquement par téléphone</h4>
-          <h4>En cas d'urgence contacter le 15</h4>
+          <h4>En cas d&apos;urgence contacter le 15</h4>
         </div>
       </div>
-      <a href="/" className="back-button">Retour à l'accueil</a>
+      <a href="/" className="back-button">Retour à l&apos;accueil</a>
     </div>
   );
 }
